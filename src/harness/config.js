@@ -12,10 +12,11 @@ fcl.config()
 if (USE_LOCAL) {
   // prettier-ignore
   fcl.config()
-    .put('flow.network', 'local')
-    .put('env', 'local')
-    .put('accessNode.api', 'http://localhost:8888')
-    .put('discovery.wallet', 'http://localhost:8701/fcl/authn')
+    .put('flow.network', 'testnet')
+    .put('env', 'testnet')
+    .put('accessNode.api', 'https://rest-testnet.onflow.org')
+    .put('discovery.wallet', 'http://localhost:3014/v1/fcl/authn?network=testnet&ak=pk_live_57F1A666E6E19BCA')
+    .put('discovery.wallet.method', 'IFRAME/RPC')
 } else {
   // prettier-ignore
   fcl.config()
