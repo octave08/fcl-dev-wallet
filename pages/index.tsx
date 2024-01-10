@@ -22,9 +22,11 @@ export default function Page() {
   const config = useConfig()
 
   return (
-    <div>
+    <div style={{width: '600px', overflow: 'scroll'}}>
       <ul>{COMMANDS.map(renderCommand)}</ul>
-      <pre>{JSON.stringify({currentUser, config}, null, 2)}</pre>
+      <pre style={{width: "100%"}}>
+        {JSON.stringify({currentUser, config}, null, 2)}
+      </pre>
     </div>
   )
 }
