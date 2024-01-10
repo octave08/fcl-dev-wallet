@@ -15,7 +15,7 @@ if (USE_LOCAL) {
     .put('flow.network', 'testnet')
     .put('env', 'testnet')
     .put('accessNode.api', 'https://rest-testnet.onflow.org')
-    .put('discovery.wallet', 'http://localhost:3014/v1/fcl/authn?network=testnet&ak=pk_live_57F1A666E6E19BCA')
+    .put('discovery.wallet', 'http://localhost:3014/v1/fcl/authn?ak=pk_live_57F1A666E6E19BCA')
     .put('discovery.wallet.method', 'IFRAME/RPC')
 } else {
   // prettier-ignore
